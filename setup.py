@@ -11,7 +11,7 @@ with open(path.join(here, 'requirements.txt'), encoding='utf-8') as f:
     required = f.read()
 
 setup(
-    name='json_to_excel',
+    name='bitcoin_tracker',
     version='0.1',
     description='A sample Python project',
     long_description=long_description,
