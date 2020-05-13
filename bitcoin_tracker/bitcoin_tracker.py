@@ -21,8 +21,11 @@ logger = logging.getLogger('BitcoinTrackerTask')
 def get_latest_bitcoin_price():
     
     response = requests.get(config.BITCOIN_API_URL)
+    import  pprint as pp
+    pp.pprint(response.text)
     response_json = response.json()
     # Convert the price to a floating point number
+    print(response_json)
     return float(response_json[0]['price_usd'])
 
 
